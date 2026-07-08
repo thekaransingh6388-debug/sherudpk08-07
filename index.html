@@ -1,519 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <title>BANK NIFTY STUDY | Stock Market Tips & Telegram Channel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <!-- Meta Pixel Code with NEW PIXEL ID -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1065947585758244');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1065947585758244&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(145deg, #0a0f1a 0%, #03060e 100%);
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .main-container {
-      max-width: 550px;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    /* Premium Card */
-    .premium-card {
-      background: rgba(12, 20, 32, 0.88);
-      backdrop-filter: blur(18px);
-      border-radius: 2.2rem;
-      padding: 2rem 1.6rem;
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(59, 130, 246, 0.2);
-      text-align: center;
-    }
-
-    /* Logo */
-    .logo-wrapper {
-      margin-bottom: 1rem;
-    }
-    .logo-img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2.5px solid #3b82f6;
-      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-    }
-
-    /* Name - BANK NIFTY STUDY */
-    .name-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: -0.3px;
-      background: linear-gradient(135deg, #FFFFFF, #93c5fd, #60a5fa);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      margin-bottom: 0.3rem;
-    }
-
-    .sub-badge {
-      font-size: 0.8rem;
-      color: #9ca3af;
-      margin-bottom: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    /* 🔥 FIRST BUTTON - NAME KE NICHE (Dark Blue) */
-    .btn-dark-blue {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      background: linear-gradient(95deg, #1e3a8a 0%, #1e40af 100%);
-      padding: 0.9rem 1.5rem;
-      border-radius: 60px;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: white;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(59, 130, 246, 0.5);
-      width: 100%;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-    }
-    .btn-dark-blue i {
-      font-size: 1.35rem;
-    }
-    .btn-dark-blue:hover {
-      transform: translateY(-3px);
-      background: linear-gradient(95deg, #1e3a8a, #2563eb);
-      box-shadow: 0 18px 28px -10px rgba(0, 0, 0, 0.6);
-    }
-
-    /* Second Button (Last me wala) - same dark blue */
-    .btn-last-dark {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      background: linear-gradient(95deg, #1e3a8a 0%, #1e40af 100%);
-      padding: 0.85rem 1.5rem;
-      border-radius: 60px;
-      font-weight: 700;
-      font-size: 1rem;
-      color: white;
-      text-decoration: none;
-      transition: 0.25s ease;
-      border: 1px solid rgba(59, 130, 246, 0.5);
-      width: 100%;
-      margin-top: 0.8rem;
-      cursor: pointer;
-    }
-    .btn-last-dark i {
-      font-size: 1.3rem;
-    }
-    .btn-last-dark:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(95deg, #1e3a8a, #2563eb);
-    }
-
-    /* SUBSCRIBE BUTTON (Extra Subscribe Button with event tracking) */
-    .btn-subscribe {
-      background: linear-gradient(95deg, #0f2b5e 0%, #1a4791 100%);
-      border-bottom: 2px solid #facc15;
-      margin-top: 0.8rem;
-    }
-    .btn-subscribe:hover {
-      background: linear-gradient(95deg, #163b77, #1f55b0);
-    }
-
-    /* Label under first button */
-    .btn-label {
-      font-size: 0.7rem;
-      color: #a0aec0;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-    .btn-label i {
-      color: #3b82f6;
-      font-size: 0.7rem;
-    }
-
-    /* Features Box (Stock Market Points) */
-    .features-box {
-      background: rgba(0, 0, 0, 0.45);
-      border-radius: 1.5rem;
-      padding: 1.2rem 1rem;
-      margin: 1.5rem 0;
-      text-align: left;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-    }
-    .features-box h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 0.8rem;
-      color: #60a5fa;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      justify-content: center;
-    }
-    .feature-list p {
-      font-size: 0.9rem;
-      margin: 0.5rem 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #e2e8f0;
-    }
-    .feature-list i {
-      color: #3b82f6;
-      width: 22px;
-      font-size: 0.9rem;
-    }
-    .disclaimer-text {
-      font-size: 0.7rem;
-      color: #fbbf24;
-      margin-top: 0.8rem;
-      text-align: center;
-      background: rgba(0,0,0,0.4);
-      padding: 0.4rem;
-      border-radius: 30px;
-    }
-
-    /* About section */
-    .about-section {
-      background: rgba(255,255,255,0.02);
-      padding: 0.8rem;
-      border-radius: 1.2rem;
-      margin: 1rem 0;
-      font-size: 0.85rem;
-      color: #cbd5e6;
-      text-align: center;
-      border: 1px solid rgba(59,130,246,0.2);
-    }
-
-    .inspire-line {
-      font-size: 0.75rem;
-      font-style: italic;
-      margin-top: 1rem;
-      color: #9ca3af;
-      border-top: 1px solid rgba(59,130,246,0.3);
-      padding-top: 1rem;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Mehta Is Back • Stock Market Official</title>
+    <meta name="description" content="Join Mehta Is Back for NIFTY, BANKNIFTY & Stock Options - Live analysis, 85% accuracy, daily premium calls">
     
-    .event-badge {
-      font-size: 0.6rem;
-      color: #facc15;
-      margin-top: 6px;
-      text-align: center;
-      letter-spacing: 0.3px;
-    }
+    <!-- ========== NEW META PIXEL CODE (ID: 1540978390847367) ========== -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1540978390847367');
+        fbq('track', 'PageView', {
+            page_type: 'Telegram_Join_Mehta_Is_Back',
+            niche: 'Stock_Market_Options_Nifty_BankNifty',
+            theme: 'bronze_pink'
+        });
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1540978390847367&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- END META PIXEL CODE -->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    @media (max-width: 480px) {
-      .premium-card {
-        padding: 1.4rem;
-      }
-      .name-title {
-        font-size: 1.5rem;
-      }
-      .btn-dark-blue, .btn-last-dark {
-        padding: 0.75rem 1rem;
-        font-size: 0.9rem;
-      }
-      .feature-list p {
-        font-size: 0.8rem;
-      }
-      .logo-img {
-        width: 80px;
-        height: 80px;
-      }
-    }
-  </style>
+        /* BRONZE BACKGROUND THEME */
+        body {
+            background: radial-gradient(circle at 30% 20%, #6b4c2a 0%, #3d2b1a 40%, #1f140a 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Poppins', sans-serif;
+            padding: 2rem 1.2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 580px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .card {
+            background: rgba(30, 20, 10, 0.92);
+            backdrop-filter: blur(12px);
+            border-radius: 56px;
+            padding: 2rem 1.8rem 2.5rem;
+            border: 1px solid rgba(205, 150, 80, 0.4);
+            box-shadow: 0 35px 55px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(180, 130, 60, 0.3);
+            transition: all 0.2s;
+        }
+
+        .logo-box {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .logo-img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 35px;
+            box-shadow: 0 20px 30px -10px black, 0 0 0 3px #b8863a;
+            transition: transform 0.2s;
+        }
+        .logo-img:hover {
+            transform: scale(1.02);
+        }
+
+        .brand-name {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f5d6a8 0%, #e6b87e 30%, #d49c5c 70%, #c4883e 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            margin-top: 0.8rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .tagline {
+            text-align: center;
+            margin-top: 6px;
+        }
+        .tagline span {
+            background: rgba(205, 150, 80, 0.2);
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #f0d2a8;
+            display: inline-block;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(205, 150, 80, 0.2);
+        }
+
+        .btn-wrap {
+            margin: 1.6rem 0 1rem;
+        }
+        
+        /* PINK BUTTONS */
+        .tele-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(95deg, #d45a8a 0%, #e06b9e 40%, #e882b0 100%);
+            padding: 1rem 1rem;
+            border-radius: 80px;
+            font-size: 1.18rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.25s ease;
+            box-shadow: 0 10px 20px -5px rgba(180, 60, 100, 0.5), 0 0 0 1px rgba(220, 120, 160, 0.5);
+            text-align: center;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            border: none;
+        }
+        .tele-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(95deg, #c94a7a, #e06b9e, #ed8ab8);
+            box-shadow: 0 18px 28px -8px rgba(180, 50, 90, 0.6);
+        }
+        .tele-btn:active {
+            transform: translateY(1px);
+        }
+        .icon-tg {
+            font-size: 1.5rem;
+        }
+
+        .bottom-btn {
+            margin-top: 1rem;
+        }
+
+        .market-panel {
+            background: rgba(40, 28, 16, 0.7);
+            border-radius: 32px;
+            padding: 1.4rem 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid #a67c4a;
+            box-shadow: inset 0 1px 2px rgba(255,215,160,0.05), 0 6px 12px -8px black;
+        }
+        .panel-header {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #f0d2a8;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 3px solid #d49c5c;
+            padding-left: 10px;
+        }
+        .feature-list {
+            list-style: none;
+        }
+        .feature-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 500;
+            color: #f5e6d0;
+            font-size: 0.95rem;
+        }
+        .feature-list li::before {
+            content: "🔥";
+            font-size: 1rem;
+        }
+        .feature-list li:nth-child(2)::before { content: "📊"; }
+        .feature-list li:nth-child(3)::before { content: "⚡"; }
+        .feature-list li:nth-child(4)::before { content: "💰"; }
+        
+        .disclaimer-free {
+            background: #2f1e0e;
+            border-radius: 30px;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #f0c894;
+            margin-top: 16px;
+            border: 1px solid rgba(205, 150, 80, 0.2);
+        }
+        .live-latest {
+            background: #2a1a0c;
+            border-radius: 28px;
+            text-align: center;
+            padding: 8px 12px;
+            font-size: 0.7rem;
+            color: #e8c494;
+            margin-top: 13px;
+            border: 1px solid rgba(180, 130, 60, 0.15);
+        }
+
+        .footer-credit {
+            text-align: center;
+            font-size: 0.65rem;
+            margin-top: 1.8rem;
+            color: #b8956a;
+            border-top: 1px solid #5a402a;
+            padding-top: 1rem;
+        }
+        
+        .event-badge {
+            text-align: center;
+            font-size: 0.6rem;
+            color: #e6b87e;
+            margin-top: 6px;
+            letter-spacing: 0.3px;
+        }
+        
+        @media (max-width: 500px) {
+            .card {
+                padding: 1.4rem 1.2rem;
+            }
+            .brand-name {
+                font-size: 1.7rem;
+            }
+            .tele-btn {
+                font-size: 0.95rem;
+                padding: 0.8rem 0.8rem;
+            }
+            .feature-list li {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="main-container">
-  <div class="premium-card">
-    
-    <!-- Logo - NEW BANK NIFTY STUDY LOGO -->
-    <div class="logo-wrapper">
-      <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/06/BankNiftyStudy_WordPress_1200x1200.jpg" alt="BANK NIFTY STUDY" onerror="this.src='https://placehold.co/200x200?text=BNS'">
+<div class="container">
+    <div class="card">
+        
+        <!-- LOGO Section -->
+        <div class="logo-box">
+            <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/download-35.jpg" alt="Mehta Is Back Logo" onerror="this.src='https://placehold.co/110x110/6b4c2a/white?text=MIB'">
+        </div>
+        
+        <div class="brand-name">MEHTA IS BACK</div>
+        <div class="tagline"><span>🎯 NIFTY • BANKNIFTY • OPTIONS MASTER 🎯</span></div>
+        
+        <!-- FIRST JOIN BUTTON - directly below name -->
+        <div class="btn-wrap">
+            <a id="joinBtnTop" href="https://t.me/+fptb6Ai1SM83ZjFl" target="_blank" class="tele-btn" data-button-name="Join Button Primary (Below Name)" data-position="first_under_name">
+                🚀 JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+        
+        <!-- SECOND JOIN BUTTON - second button below name -->
+        <div class="bottom-btn">
+            <a id="joinBtnBottom" href="https://t.me/+fptb6Ai1SM83ZjFl" target="_blank" class="tele-btn" data-button-name="Join Button Secondary (Below Name 2)" data-position="second_under_name">
+                ⚡ GET FREE CALLS → JOIN NOW
+            </a>
+        </div>
+        
+        <!-- STOCK RELATED LINES -->
+        <div class="market-panel">
+            <div class="panel-header">
+                <span>📈</span> NIFTY/BANKNIFTY & OPTIONS EDGE
+            </div>
+            <ul class="feature-list">
+                <li>✅ Target 150-350 Points Per Trade</li>
+                <li>✅ 85-92% Accurate Market Calls</li>
+                <li>✅ 4-5 Premium Setups Daily</li>
+                <li>✅ Live Options Chain & FII Analysis</li>
+            </ul>
+            <div class="disclaimer-free">
+                📢 Disclaimer: DAILY FREE PREMIUM CALLS ✅
+            </div>
+            <div class="live-latest">
+                🔴 LIVE STREAMING ANALYSIS • MEHTA'S SECRET STRATEGY • REAL TIME ENTRY 🔴
+            </div>
+        </div>
+        
+        <div class="footer-credit">
+            🔐 Instant Access • 7000+ Active Traders • Daily Free Setups <br>
+            © MEHTA IS BACK — Your Trusted Market Navigator
+        </div>
     </div>
-
-    <!-- Name: BANK NIFTY STUDY (PANKAJ HATA DENA) -->
-    <div class="name-title">BANK NIFTY STUDY</div>
-    <div class="sub-badge">
-      <i class="fas fa-chart-line" style="color:#3b82f6;"></i> Bank Nifty & Options Expert
-      <i class="fas fa-check-circle" style="color:#22c55e;"></i> Verified Signals
-    </div>
-
-    <!-- ✅ FIRST TELEGRAM BUTTON (Name ke just niche) + Dark Blue - NEW LINK -->
-    <a href="https://t.me/+fWP52m0tDHMzOGZl" target="_blank" rel="noopener noreferrer" class="btn-dark-blue" id="joinBtnFirst" data-button-name="Join Button Primary (Below Name)" data-position="first_under_name">
-      <i class="fab fa-telegram-plane"></i> Join Telegram Channel
-    </a>
-    <div class="btn-label">
-      <i class="fas fa-bolt"></i> Free Access • Live Bank Nifty Calls • 24/7
-    </div>
-
-    <!-- ========== STOCK MARKET POINTS (Same as before - Bank Nifty Focus) ========== -->
-    <div class="features-box">
-      <h3><i class="fas fa-chart-simple"></i> NIFTY • BANKNIFTY & STOCK OPTIONS</h3>
-      <div class="feature-list">
-        <p><i class="fas fa-arrow-up"></i> ✅ Get up to 100-300 Points</p>
-        <p><i class="fas fa-chart-line"></i> ✅ 80-90% Accuracy</p>
-        <p><i class="fas fa-eye"></i> ✅ 3-4 observational Call daily</p>
-        <p><i class="fas fa-calendar-day"></i> ✅ 3 daily best trade for all</p>
-      </div>
-      <div class="disclaimer-text">
-        ⚡ Disclaimer:- DAILY FREE DEMO CALL ✅
-      </div>
-    </div>
-
-    <!-- About Section (Stock Analysis Live) -->
-    <div class="about-section">
-      <i class="fas fa-microphone-alt" style="color:#3b82f6; margin-right: 6px;"></i> 
-      <strong>Live Bank Nifty & Stock Analysis</strong><br>
-      Get real-time Nifty/BankNifty levels, option buying calls, and positional trades. Perfect for beginners & pros.
-    </div>
-
-    <!-- ✅ SECOND TELEGRAM BUTTON (Last me rakha hai) with Dark Blue - NEW LINK -->
-    <a href="https://t.me/+fWP52m0tDHMzOGZl" target="_blank" rel="noopener noreferrer" class="btn-last-dark" id="joinBtnSecond" data-button-name="Join Button Secondary (Last me wala)" data-position="last_button_bottom">
-      <i class="fab fa-telegram"></i> Join Now & Start Earning
-    </a>
-    
-    <!-- ✅ EXTRA SUBSCRIBE BUTTON + EVENT TOOL PIXEL TRACKING (Subscribe button) -->
-    <a href="https://t.me/+fWP52m0tDHMzOGZl" target="_blank" rel="noopener noreferrer" class="btn-last-dark btn-subscribe" id="subscribeBtnSpecial" data-button-name="Subscribe Telegram Button (Event Track)" data-position="dedicated_subscribe_section">
-      <i class="fas fa-bell"></i> 🔔 SUBSCRIBE TO TELEGRAM ALERTS
-    </a>
-    <div class="event-badge">
-      🎯 Pixel Tracked: Lead + Subscribe + CustomEvent (Event Tool Active)
-    </div>
-    
-    <div class="btn-label" style="margin-top: 6px;">
-      <i class="fas fa-lock-open"></i> 100% Free • Limited Spots
-    </div>
-
-    <!-- Extra good line -->
-    <div class="inspire-line">
-      📈 "Master Bank Nifty with our expert analysis, follow our levels, and trade with confidence." — BANK NIFTY STUDY
-    </div>
-  </div>
 </div>
 
-<!-- COMPLETE EVENT TRACKING SCRIPT: Subscribe + Join Telegram + Event Tool Pixel Tracking -->
 <script>
-(function() {
-    // Helper function to fire all pixel events (Lead, Subscribe, CustomEvent)
-    function fireAllPixelEvents(buttonElement, buttonName, position) {
-        if (typeof fbq !== 'function') {
-            console.warn("Facebook Pixel not ready. Tracking skipped but link works.");
-            return;
-        }
+    // ============================================================
+    // NEW PIXEL ID: 1540978390847367  (FULLY INTEGRATED)
+    // TELEGRAM LINK: https://t.me/+fptb6Ai1SM83ZjFl
+    // COMPLETE EVENT TRACKING: Lead, Subscribe, CustomEvent
+    // Also tracks Scroll Depth, Time on Page, Button Impressions
+    // ============================================================
+    (function() {
+        const CONFIG = {
+            TELEGRAM_LINK: 'https://t.me/+fptb6Ai1SM83ZjFl',
+            PIXEL_ID: '1540978390847367',
+            CHANNEL_NAME: 'MEHTA_IS_BACK'
+        };
         
-        // Standard Lead event (primary conversion for join/subscribe)
-        fbq('track', 'Lead', {
-            content_name: buttonName,
-            content_category: 'Telegram_Channel_Join_BankNiftyStudy',
-            button_position: position,
-            method: 'Telegram_Redirect',
-            currency: 'INR',
-            value: 0
-        });
-        
-        // Subscribe event (Meta standard event for subscriptions)
-        fbq('track', 'Subscribe', {
-            content_name: 'Telegram_Channel_Subscription_BankNiftyStudy',
-            status: 'joined',
-            button_name: buttonName,
-            location: position,
-            channel: 'BANK_NIFTY_STUDY_TELEGRAM'
-        });
-        
-        // Custom event for deeper analytics (Event Tool Pixel Track)
-        fbq('track', 'CustomEvent', {
-            event_name: 'JoinBankNiftyStudyTelegram',
-            button_label: buttonName,
-            position_on_page: position,
-            page_section: 'cta_telegram',
-            timestamp: new Date().toISOString()
-        });
-        
-        // Additional Custom Event with specific name
-        if (fbq && fbq('trackCustom')) {
-            fbq('trackCustom', 'BankNiftyStudyTelegramJoin', {
+        // Helper: Fire all important pixel events for any Telegram action
+        function fireAllTrackingEvents(buttonElement, buttonName, position) {
+            if (typeof fbq !== 'function') {
+                console.warn("Facebook Pixel not loaded yet, but link will still work.");
+                return;
+            }
+            
+            // 1. LEAD event (standard conversion for joining channel)
+            fbq('track', 'Lead', {
+                content_name: buttonName,
+                content_category: 'Telegram_Channel_Join_MehtaIsBack',
+                button_position: position,
+                method: 'Telegram_Redirect',
+                currency: 'INR',
+                value: 0.01,
+                channel: CONFIG.CHANNEL_NAME,
+                pixel_id: CONFIG.PIXEL_ID
+            });
+            
+            // 2. SUBSCRIBE event (for join/subscribe tracking)
+            fbq('track', 'Subscribe', {
+                content_name: 'Telegram_Channel_Subscription_Mehta',
+                status: 'subscribed',
                 button_name: buttonName,
-                location: position
+                location: position,
+                channel: 'MEHTA_IS_BACK_TELEGRAM',
+                pixel_id: CONFIG.PIXEL_ID,
+                subscription_plan: 'Free_Telegram_Channel'
             });
-        }
-        
-        console.log(`[FB Pixel] Events fired: Lead, Subscribe, CustomEvent for "${buttonName}" at "${position}"`);
-    }
-    
-    // Get all telegram join/subscribe buttons
-    const firstButton = document.getElementById('joinBtnFirst');
-    const secondButton = document.getElementById('joinBtnSecond');
-    const subscribeButton = document.getElementById('subscribeBtnSpecial');
-    
-    // Function to attach tracking to a button (replaces with tracked version)
-    function setupButtonTracking(button, defaultName, defaultPosition) {
-        if (!button) return;
-        
-        // Get custom attributes or use defaults
-        let buttonName = button.getAttribute('data-button-name') || defaultName;
-        let position = button.getAttribute('data-position') || defaultPosition;
-        
-        // Clone to remove existing listeners and add fresh tracking
-        const newButton = button.cloneNode(true);
-        if (button.parentNode) {
-            button.parentNode.replaceChild(newButton, button);
-        }
-        
-        newButton.addEventListener('click', function(e) {
-            // Fire all pixel events before redirect
-            fireAllPixelEvents(newButton, buttonName, position);
-            console.log(`[Click Track] Redirecting to Telegram via ${buttonName}`);
-            return true;
-        });
-        
-        // Ensure href is correct (NEW LINK)
-        if (!newButton.getAttribute('href') || newButton.getAttribute('href') !== 'https://t.me/+fWP52m0tDHMzOGZl') {
-            newButton.setAttribute('href', 'https://t.me/+fWP52m0tDHMzOGZl');
-        }
-    }
-    
-    // Setup all three buttons
-    setupButtonTracking(firstButton, 'Join Button Primary (Below Name)', 'first_under_name_direct');
-    setupButtonTracking(secondButton, 'Join Button Secondary (Last me wala)', 'last_button_bottom');
-    setupButtonTracking(subscribeButton, 'Subscribe Telegram Button (Event Track)', 'dedicated_subscribe_section');
-    
-    // ========== SCROLL DEPTH TRACKING (Event Tool) ==========
-    let scrollTracked25 = false;
-    let scrollTracked50 = false;
-    let scrollTracked75 = false;
-    
-    window.addEventListener('scroll', function() {
-        const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-        
-        if (!scrollTracked25 && scrollPercent >= 25) {
-            if (typeof fbq === 'function') {
-                fbq('track', 'ScrollDepth', { depth: '25%', page: 'bank_nifty_study_landing' });
-                fbq('trackCustom', 'EngagementScroll', { percent: 25, channel: 'BankNiftyStudy' });
-                console.log('[Event Tool] Scroll depth 25% tracked');
+            
+            // 3. CustomEvent for deeper analytics
+            fbq('track', 'CustomEvent', {
+                event_name: 'JoinMehtaTelegramChannel',
+                button_label: buttonName,
+                position_on_page: position,
+                page_section: 'cta_telegram',
+                timestamp: new Date().toISOString(),
+                pixel_id: CONFIG.PIXEL_ID,
+                source: 'mehta_is_back_landing'
+            });
+            
+            // 4. trackCustom fallback
+            if (fbq('trackCustom')) {
+                fbq('trackCustom', 'MehtaTelegramJoin', {
+                    button_name: buttonName,
+                    location: position,
+                    telegram_link: CONFIG.TELEGRAM_LINK,
+                    pixel_id: CONFIG.PIXEL_ID
+                });
+            } else {
+                fbq('track', 'CustomEvent', {
+                    event_name: 'MehtaTelegramJoin',
+                    button_name: buttonName,
+                    location: position,
+                    telegram_link: CONFIG.TELEGRAM_LINK,
+                    pixel_id: CONFIG.PIXEL_ID
+                });
             }
-            scrollTracked25 = true;
+            
+            console.log(`[FB Pixel] ✅ Events fired: Lead, Subscribe, CustomEvent for "${buttonName}" at "${position}" (Pixel: ${CONFIG.PIXEL_ID})`);
         }
         
-        if (!scrollTracked50 && scrollPercent >= 50) {
-            if (typeof fbq === 'function') {
-                fbq('track', 'ScrollDepth', { depth: '50%', page: 'bank_nifty_study_landing' });
-                fbq('trackCustom', 'EngagementScroll', { percent: 50, channel: 'BankNiftyStudy' });
-                console.log('[Event Tool] Scroll depth 50% tracked');
+        // Helper to setup button tracking
+        function setupButtonWithTracking(button, defaultName, defaultPosition) {
+            if (!button) return null;
+            let buttonName = button.getAttribute('data-button-name') || defaultName;
+            let position = button.getAttribute('data-position') || defaultPosition;
+            
+            // Clone to replace and ensure fresh listener
+            const newBtn = button.cloneNode(true);
+            if (button.parentNode) {
+                button.parentNode.replaceChild(newBtn, button);
             }
-            scrollTracked50 = true;
+            newBtn.setAttribute('href', CONFIG.TELEGRAM_LINK);
+            newBtn.setAttribute('target', '_blank');
+            newBtn.setAttribute('rel', 'noopener noreferrer');
+            
+            newBtn.addEventListener('click', function(e) {
+                fireAllTrackingEvents(newBtn, buttonName, position);
+                return true;
+            });
+            return newBtn;
         }
         
-        if (!scrollTracked75 && scrollPercent >= 75) {
-            if (typeof fbq === 'function') {
-                fbq('track', 'ScrollDepth', { depth: '75%', page: 'bank_nifty_study_landing' });
-                fbq('trackCustom', 'EngagementScroll', { percent: 75, channel: 'BankNiftyStudy' });
-                console.log('[Event Tool] Scroll depth 75% tracked');
-            }
-            scrollTracked75 = true;
-        }
-    });
-    
-    // ========== PAGE VIEW ENHANCED TRACKING ==========
-    if (typeof fbq === 'function') {
-        fbq('track', 'ViewContent', {
-            content_name: 'Bank_Nifty_Study_Telegram_Landing',
-            content_category: 'StockMarket_Channel_BankNiftyStudy',
-            currency: 'INR',
-            value: 0
-        });
-        fbq('trackCustom', 'LandingPageViewed_BankNiftyStudy', {
-            designer: 'BankNiftyStudy',
-            version: '2.0_EventTool_Final'
-        });
-        console.log('[Pixel] PageView, ViewContent, and Custom landing event tracked');
-    }
-    
-    // ========== DELEGATION SAFETY: Track any telegram link click that might have been missed ==========
-    document.body.addEventListener('click', function(e) {
-        const target = e.target.closest('a');
-        if (target && target.href && target.href.includes('t.me/+fWP52m0tDHMzOGZl')) {
-            // Check if tracking already attached
-            if (!target.hasAttribute('data-tracked-telegram')) {
-                let btnName = target.innerText.trim().substring(0, 50) || 'Telegram_Link_Dynamic_BNS';
-                let pos = 'dynamic_click_delegation';
+        // Setup both buttons
+        let topBtn = document.getElementById('joinBtnTop');
+        let bottomBtn = document.getElementById('joinBtnBottom');
+        
+        const trackedTop = setupButtonWithTracking(topBtn, 'Join Button Primary (Below Name)', 'first_under_name');
+        const trackedBottom = setupButtonWithTracking(bottomBtn, 'Join Button Secondary (Below Name 2)', 'second_under_name');
+        
+        // ========== SCROLL DEPTH TRACKING ==========
+        let scroll25 = false, scroll50 = false, scroll75 = false, scroll100 = false;
+        window.addEventListener('scroll', function() {
+            const winScroll = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            if (docHeight <= 0) return;
+            const percent = (winScroll / docHeight) * 100;
+            
+            if (!scroll25 && percent >= 25) {
                 if (typeof fbq === 'function') {
-                    fbq('track', 'Lead', { content_name: btnName, content_category: 'dynamic_telegram_banknifty', button_position: pos });
-                    fbq('track', 'Subscribe', { content_name: 'Telegram_Channel_Join_Dynamic_BNS' });
-                    fbq('trackCustom', 'BankNiftyStudyTelegramJoin', { button_name: btnName, location: pos });
-                    console.log('[Delegation] Pixel tracked for dynamic telegram click');
+                    fbq('track', 'ScrollDepth', { depth: '25%', page: 'mehta_is_back_landing', pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 25, channel: CONFIG.CHANNEL_NAME, pixel_id: CONFIG.PIXEL_ID });
                 }
-                target.setAttribute('data-tracked-telegram', 'true');
+                scroll25 = true;
+            }
+            if (!scroll50 && percent >= 50) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '50%', page: 'mehta_is_back_landing', pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 50, channel: CONFIG.CHANNEL_NAME, pixel_id: CONFIG.PIXEL_ID });
+                }
+                scroll50 = true;
+            }
+            if (!scroll75 && percent >= 75) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '75%', page: 'mehta_is_back_landing', pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 75, channel: CONFIG.CHANNEL_NAME, pixel_id: CONFIG.PIXEL_ID });
+                }
+                scroll75 = true;
+            }
+            if (!scroll100 && percent >= 99) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '100%', page: 'mehta_is_back_landing', pixel_id: CONFIG.PIXEL_ID });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 100, channel: CONFIG.CHANNEL_NAME, pixel_id: CONFIG.PIXEL_ID });
+                }
+                scroll100 = true;
+            }
+        });
+        
+        // ========== ENHANCED PAGE VIEW TRACKING ==========
+        if (typeof fbq === 'function') {
+            fbq('track', 'ViewContent', {
+                content_name: 'Mehta_Is_Back_Telegram_Landing',
+                content_category: 'StockMarket_Channel_Mehta',
+                currency: 'INR',
+                value: 0,
+                pixel_id: CONFIG.PIXEL_ID
+            });
+            fbq('trackCustom', 'LandingPageViewed_Mehta', {
+                designer: 'MehtaIsBack',
+                version: '4.1_Bronze_Pink',
+                telegram_link: CONFIG.TELEGRAM_LINK,
+                pixel_id: CONFIG.PIXEL_ID
+            });
+            console.log(`[Pixel] ViewContent + Custom Landing tracked. New Pixel: ${CONFIG.PIXEL_ID}`);
+        }
+        
+        // ========== TIME ON PAGE TRACKING ==========
+        let startTime = Date.now();
+        let timeTrackedFlag = false;
+        function trackTimeSpent() {
+            if (timeTrackedFlag) return;
+            const seconds = Math.floor((Date.now() - startTime) / 1000);
+            if (seconds > 5 && typeof fbq === 'function') {
+                fbq('trackCustom', 'TimeOnPage', {
+                    seconds_spent: seconds,
+                    page: 'mehta_is_back_landing',
+                    channel: CONFIG.CHANNEL_NAME,
+                    pixel_id: CONFIG.PIXEL_ID
+                });
+                console.log(`[Event Tool] Time on page tracked: ${seconds} seconds`);
+                timeTrackedFlag = true;
             }
         }
-    });
-    
-    // ========== TIME ON PAGE TRACKING (Event Tool) ==========
-    let startTime = Date.now();
-    window.addEventListener('beforeunload', function() {
-        const timeSpent = Math.floor((Date.now() - startTime) / 1000);
-        if (timeSpent > 5 && typeof fbq === 'function') {
-            fbq('trackCustom', 'TimeOnPage', {
-                seconds_spent: timeSpent,
-                page: 'bank_nifty_study_landing'
+        window.addEventListener('beforeunload', trackTimeSpent);
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) trackTimeSpent();
+        });
+        
+        // ========== BUTTON IMPRESSION TRACKING ==========
+        if (typeof fbq === 'function') {
+            const impressionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.target) {
+                        const btnId = entry.target.id || 'unknown';
+                        const btnName = entry.target.getAttribute('data-button-name') || 'join_button';
+                        fbq('trackCustom', 'ButtonImpression', {
+                            button_id: btnId,
+                            button_name: btnName,
+                            visible: true,
+                            channel: CONFIG.CHANNEL_NAME,
+                            pixel_id: CONFIG.PIXEL_ID
+                        });
+                        console.log(`[Impression] Button visible: ${btnId} (${btnName})`);
+                        impressionObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const allTrackedButtons = [trackedTop, trackedBottom].filter(btn => btn);
+            allTrackedButtons.forEach(btn => {
+                if (btn) impressionObserver.observe(btn);
             });
-            console.log(`[Event Tool] Time on page tracked: ${timeSpent} seconds`);
         }
-    });
-    
-    console.log('✅ BANK NIFTY STUDY: All Join Telegram & Subscribe buttons are pixel-tracked with Lead, Subscribe & Custom events');
-    console.log('✅ Buttons placed: (1) First under name, (2) Second at bottom (last me), (3) Extra Subscribe button with event tracking');
-    console.log('✅ Stock market points: NIFTY/BANKNIFTY 100-300 Points, 80-90% Accuracy, 3-4 calls daily');
-    console.log('✅ Telegram Link: https://t.me/+fWP52m0tDHMzOGZl');
-    console.log('✅ Pixel ID: 1065947585758244');
-})();
+        
+        // ========== GLOBAL DELEGATION: Catch any telegram click that might have been missed ==========
+        document.body.addEventListener('click', function(e) {
+            const anchor = e.target.closest('a');
+            if (anchor && anchor.href && anchor.href.includes('t.me/+fptb6Ai1SM83ZjFl')) {
+                if (!anchor.hasAttribute('data-telegram-tracked-final')) {
+                    let dynamicName = anchor.innerText.trim().slice(0, 50) || 'Telegram_Link_Mehta';
+                    let dynamicPos = 'delegation_click_handler';
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead', {
+                            content_name: dynamicName,
+                            content_category: 'dynamic_telegram_mehta',
+                            button_position: dynamicPos,
+                            pixel_id: CONFIG.PIXEL_ID
+                        });
+                        fbq('track', 'Subscribe', {
+                            content_name: 'Telegram_Channel_Join_Dynamic',
+                            pixel_id: CONFIG.PIXEL_ID
+                        });
+                        fbq('trackCustom', 'MehtaTelegramJoin', {
+                            button_name: dynamicName,
+                            location: dynamicPos,
+                            pixel_id: CONFIG.PIXEL_ID
+                        });
+                        console.log('[Delegation] Extra tracking fired for dynamic telegram link');
+                    }
+                    anchor.setAttribute('data-telegram-tracked-final', 'true');
+                }
+            }
+        });
+        
+        // ========== CONSOLE STATUS & DEBUG ==========
+        console.log('%c🔥 MEHTA IS BACK | BRONZE + PINK THEME 🔥', 'color: #e6b87e; font-weight: bold; font-size: 15px;');
+        console.log(`✅ New Pixel ID: ${CONFIG.PIXEL_ID}`);
+        console.log(`✅ Telegram Link: ${CONFIG.TELEGRAM_LINK}`);
+        console.log('✅ Total Tracked Buttons: 2 (PINK)');
+        console.log('   - Primary Join (below name)');
+        console.log('   - Secondary Join (second below name)');
+        console.log('✅ Events per click: Lead, Subscribe, CustomEvent (x2)');
+        console.log('✅ Additional tracking: ScrollDepth, TimeOnPage, ButtonImpression, ViewContent');
+        console.log('✅ Pixel Standard events: PageView, ViewContent, Lead, Subscribe, CustomEvent');
+        
+        // Helper debugging tools
+        window.mehtaPixelHelper = {
+            config: () => console.log('Pixel Config:', CONFIG),
+            testEvent: () => {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'Lead', { test: true, source: 'console', pixel_id: CONFIG.PIXEL_ID });
+                    fbq('track', 'Subscribe', { test: true, source: 'console', pixel_id: CONFIG.PIXEL_ID });
+                    console.log('✅ Test Lead & Subscribe events sent to Pixel ID:', CONFIG.PIXEL_ID);
+                } else {
+                    console.error('❌ fbq not available');
+                }
+            },
+            status: () => {
+                console.log('📊 Tracking Status:');
+                console.log(`  Pixel Ready: ${typeof fbq === 'function' ? '✅' : '❌'}`);
+                console.log(`  Pixel ID: ${CONFIG.PIXEL_ID}`);
+                console.log(`  Telegram Link: ${CONFIG.TELEGRAM_LINK}`);
+                console.log(`  Top Button exists: ${!!document.getElementById('joinBtnTop')}`);
+                console.log(`  Bottom Button exists: ${!!document.getElementById('joinBtnBottom')}`);
+            }
+        };
+        console.log('💡 Debug: type "mehtaPixelHelper.status()" or "mehtaPixelHelper.testEvent()" in console');
+        
+    })();
 </script>
+
+<!-- Fallback noscript images for additional event safety (new pixel) -->
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1540978390847367&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1540978390847367&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1540978390847367&ev=CustomEvent&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1540978390847367&ev=ViewContent&noscript=1"/>
+</noscript>
+
 </body>
 </html>
